@@ -11,7 +11,7 @@ I'm just practicing Python with a few web exercises.
 I'm practicing my Python to build programming skills.
 
 ## Technologies
-* Python v. 3.7
+* Python v. 3.7.4
 
 ## Status
 In progress--resumed after a year.
