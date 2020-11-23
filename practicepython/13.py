@@ -1,3 +1,5 @@
+# Write a program that asks the user how many Fibonnaci numbers to generate and then generates them.
+
 def Fibbonaci(how_many):
     if how_many > 0:
         output = [1, 1]

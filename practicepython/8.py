@@ -1,3 +1,5 @@
+# Make a two-player Rock-Paper-Scissors game.
+
 print('Welcome, player1 and player2 to the game...\n ROCK, PAPER, SCISSORS, SHOOT!')
 print('The options are: rock, paper and scissors.')
 enter = 'y'

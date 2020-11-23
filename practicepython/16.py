@@ -1,3 +1,5 @@
+# Write a password generator in Python.
+
 import random
 
 s = "abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"

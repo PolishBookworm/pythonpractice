@@ -1,3 +1,5 @@
+# Let’s say I give you a list saved in a variable. Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it.
+
 import random
 
 num_list = []
