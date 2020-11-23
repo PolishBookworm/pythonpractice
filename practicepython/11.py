@@ -1,13 +1,10 @@
+def num_divisors(n):
+  for i in range(n):
+    x = len([i for i in range(1,n+1) if not n % i])
+  return x
+
 num = int(input('Give me a number\n'))
-divisors = [n for n in range(1, num) if num % n == 0]
-if num > 1
-    if len(divisors) == 0:
-        prime = True
-    else:
-        prime = False
-else:
-    prime = False
-if prime:
+if num_divisors(num) == 2:
     print(str(num) + ' is prime')
 else:
     print(str(num) + ' is not prime')
