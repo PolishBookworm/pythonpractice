@@ -6,6 +6,8 @@
 # Once the user guesses the correct number, the game is over.
 # Keep track of the number of guesses the user makes throughout the game and tell the user at the end.
 
+# ! unsuscriptable--check the code !
+
 import random
 print('Welcome to cows and bulls!')
 num = random.randint(1,9999)

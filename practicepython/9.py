@@ -2,16 +2,16 @@
 
 import random
 
-num = random.randint(1,9)
 while True:
+    num = random.randint(1,9)
     while True:
         guess = int(input('Guess my number (1-9)\n'))
         if num == guess:
             print("That's right!")
             break
         elif num > guess:
-            print("That's a bit to low")
+            print("That's a bit too low")
         else:
-            print("Nice try, but that's to high.")
+            print("Nice try, but that's too high.")
     if input('If you want to stop type "exit". If not just click "enter"\n') == 'exit':
         break
