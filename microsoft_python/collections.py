@@ -26,7 +26,7 @@
 # print(scores[1])
 
 ###DICTIONARIES
-person ={'first': 'Christopher'}
+person = {'first': 'Christopher'}
 person['last'] = 'Harrson'
 print(person)
 print(person['first'])
