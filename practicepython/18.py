@@ -8,21 +8,43 @@
 
 # ! unsuscriptable--check the code !
 
-import random
-print('Welcome to cows and bulls!')
-num = random.randint(1,9999)
+# import random
+# print('Welcome to cows and bulls!')
+# num = random.randint(1,9999)
+# while True:
+#     guess = int(input('Guess my number\n'))
+#     if guess == num:
+#         print("That's right!")
+#         break
+#     else:
+#         cows = 0
+#         bulls = 0
+#         for n in range(1,5):
+#             if num[n] == guess[n]:
+#                 cows += 1
+#             for i in range(1,5):
+#                 if num[i] == guess[n] and i != n:
+#                     bulls += 1
+#         print(cows + ' cows, ' + bulls + ' bulls.')
+
+from random import sample
+
+print("Welcome to cows and bulls!")
+
+seq = "".join(sample("1234567890", 4))
+
 while True:
-    guess = int(input('Guess my number\n'))
-    if guess == num:
+    guess = input('Guess my 4-digit number:\n')
+    if guess == seq:
         print("That's right!")
         break
     else:
         cows = 0
         bulls = 0
-        for n in range(1,5):
-            if num[n] == guess[n]:
+        for n in range(0,4):
+            if seq[n] == guess[n]:
                 cows += 1
-            for i in range(1,5):
-                if num[i] == guess[n] and i != n:
+            for i in range(0,4):
+                if seq[i] == guess[n] and i != n:
                     bulls += 1
-        print(cows + ' cows, ' + bulls + ' bulls.')
+        print(f"You got {cows} cows and {bulls} bulls.\n")
