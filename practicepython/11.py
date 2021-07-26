@@ -1,12 +1,15 @@
 # Ask the user for a number and determine whether the number is prime or not.
 
-def num_divisors(n):
-  for i in range(n):
-    x = len([i for i in range(1,n+1) if not n % i])
-  return x
+def is_prime(num):
+    """determines whether number is prime or not (num cannot be negative); if num = 0 or 1, returns None"""
+    if num == 0 or num == 1:
+        return None
 
-num = int(input('Give me a number\n'))
-if num_divisors(num) == 2:
-    print(str(num) + ' is prime')
-else:
-    print(str(num) + ' is not prime')
+    for n in range(2, num):
+        if num % n == 0:
+            return False
+    return True
+
+while True:
+    num = int(input("? "))
+    print(is_prime(num))
