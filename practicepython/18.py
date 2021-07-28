@@ -6,27 +6,6 @@
 # Once the user guesses the correct number, the game is over.
 # Keep track of the number of guesses the user makes throughout the game and tell the user at the end.
 
-# ! unsuscriptable--check the code !
-
-# import random
-# print('Welcome to cows and bulls!')
-# num = random.randint(1,9999)
-# while True:
-#     guess = int(input('Guess my number\n'))
-#     if guess == num:
-#         print("That's right!")
-#         break
-#     else:
-#         cows = 0
-#         bulls = 0
-#         for n in range(1,5):
-#             if num[n] == guess[n]:
-#                 cows += 1
-#             for i in range(1,5):
-#                 if num[i] == guess[n] and i != n:
-#                     bulls += 1
-#         print(cows + ' cows, ' + bulls + ' bulls.')
-
 from random import sample
 
 print("Welcome to cows and bulls!")

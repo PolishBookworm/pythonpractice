@@ -36,7 +36,23 @@
 def Fibs(amount):
     '''Generates amount of Fibbonaci numbers'''
 
+    if amount <= 0:
+        return []
+
     result = [1]
 
+    if amount == 1:
+        return result
+
+    result.append(1)
+
     while len(result) < amount:
-        result.append()
+        result.append(result[-1] + result[-2])
+
+    return result
+
+print(Fibs(10))
+print(Fibs(-1))
+print(Fibs(0))
+print(Fibs(1))
+print(Fibs(2))
