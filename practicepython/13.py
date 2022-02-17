@@ -33,23 +33,38 @@
 #     print(i, " --> ", f(i))
 
 
+# def Fibs(amount):
+#     '''Generates amount of Fibbonaci numbers'''
+
+#     if amount <= 0:
+#         return []
+
+#     result = [1]
+
+#     if amount == 1:
+#         return result
+
+#     result.append(1)
+
+#     while len(result) < amount:
+#         result.append(result[-1] + result[-2])
+
+#     return result
+
 def Fibs(amount):
     '''Generates amount of Fibbonaci numbers'''
 
     if amount <= 0:
-        return []
-
-    result = [1]
-
+        raise ValueError("Values greater than or equal to 0 not allowed.")
     if amount == 1:
-        return result
-
-    result.append(1)
-
-    while len(result) < amount:
-        result.append(result[-1] + result[-2])
-
-    return result
+        return [1]
+    if amount == 2:
+        return [1, 1]
+    before = Fibs(amount-1)
+    try:
+        return before.append(before[-1] + before[-2])
+    except(AttributeError):
+        pass
 
 print(Fibs(10))
 print(Fibs(-1))
