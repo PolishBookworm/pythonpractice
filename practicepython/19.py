@@ -1,3 +1,5 @@
+# NOT FINISHED!!!
+
 # Printing text from https://wolnelektury.pl/katalog/lektura/fraszki-ksiegi-wtore-na-lipe-gosciu-siadz-pod-mym-lisciem-a-.html
 # & the next page (using requests & BeautifulSoup)
 

@@ -1,3 +1,5 @@
+# NOT FINISHED!! (make it recursive)
+
 def convert(base, decimal):
 
 	in_progress = ""

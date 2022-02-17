@@ -1,9 +1,12 @@
 def gcd_sub(a,b):
 	"""returns num_iterations: int"""
-	c = 1
 	i = 0
 	while a != b:
 		i += 1
+		if b > a:
+			c = a
+			a = b
+			b = c
 		c = b
 		b = a - c
 		a = c
@@ -12,17 +15,22 @@ def gcd_sub(a,b):
 
 def gcd_div(a,b):
 	"""returns list: [GCD: int, num_iterations: int]"""
-	pass 
+	i = 0
+	while b != 0:
+		i += 1
+		if b > a:
+			c = a
+			a = b
+			b = c
+		c = a % b
+		a = b
+		b = c
+	return [a, i]
 
 
-# num1 = int(input())
-# num2 = int(input())
+a = int(input())
+b = int(input())
 
-# if num1 > num2:
-# 	a = num1
-# 	b = num2
-# else:
-# 	a = num2
-# 	b = num1
-
-# print(f"NWD = {gcd_div(a,b)[0]}")
+print(f"NWD = {gcd_div(a,b)[0]}")
+print(f"L_iteracji (I metoda) = {gcd_div(a,b)[1]}")
+print(f"L_iteracji (II metoda) = {gcd_sub(a,b)}")
