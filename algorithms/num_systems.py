@@ -1,5 +1,4 @@
-# NOT FINISHED!! (make it recursive)
-
+# NOT FINISHED!!
 def convert(base, decimal):
 
 	in_progress = ""
@@ -8,7 +7,7 @@ def convert(base, decimal):
 
 	while n > 0:
 		in_progress += str(n % base)
-		n = int(n / base)
+		n = n / base
 
 	result = in_progress[::-1]
 	
@@ -19,7 +18,7 @@ def convert(base, decimal):
 
 
 
-base = int(input("What number system would you like to convert to ? (Please provide an integer.) "))
+base = int(input("What number system would you like to convert to? (Please provide an integer.) "))
 
 decimal = int(input("Please enter an integer in the decimal system. "))
 
