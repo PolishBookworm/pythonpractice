@@ -25,7 +25,7 @@ class DeckTests(unittest.TestCase):
 
     def test_init(self):
         """__init__ should set self.cards to be a list of 52 cards in deck"""
-        self.assertTrue(isinstance(self.d.cards, list))
+        self.assertIsInstance(self.d.cards, list)
         self.assertEqual(len(self.d.cards), 52)
 
     def test_repr_full_deck(self):

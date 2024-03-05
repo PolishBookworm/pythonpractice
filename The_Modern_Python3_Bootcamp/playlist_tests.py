@@ -25,7 +25,7 @@ class SongTests(unittest.TestCase):
             Song("", [""], "", 1)
     
     def init_assignment_tests(self):
-        """__init__ should
+        """__init__ should"""
             
 
 
