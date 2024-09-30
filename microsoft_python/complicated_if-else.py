@@ -13,7 +13,7 @@
 #     tax = 0
 # print('The tax is: ' + str(tax))
 
-###computing if you get the honour roll
+###computing if you get the honor roll
 gpa = float(input('What is your grade point average?\n'))
 lowest_grade = float(input('What is your lowest grade?\n'))
 if gpa >= .85 and lowest_grade >= .70:
